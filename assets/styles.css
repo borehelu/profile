@@ -15,4 +15,128 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+
+
+.profile{
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 1px 10px 12px rgba(0, 0, 0, 8%);
+}
+
+.profile__heading{
+    text-align: center;   
+}
+
+.profile__heading h1{
+    font-size: 1.3rem;
+}
+
+.profile__heading p{
+    margin-top: 1rem;
+    font-size: .9rem;
+}
+
+.profile__cards{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.profile__card{
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+figure{
+    width: 140px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .6rem;
+    box-shadow: -1px 3px 16px  rgba(0, 0, 0, 10%);
+}
+
+figure img{
+    display: block;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile__name{
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.profile__options{
+    position: relative;
+}
+
+.options{
+    background-color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    
+}
+
+.options__container.open{
+    display: block;
+}
+
+.options__container.close{
+    display: none;
+}
+
+.options__container{
+    position: absolute;
+    top: 1.5rem;
+    left: -2rem;
+    background-color: #fff;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 4px 12px 5px rgba(0, 0, 0, 8%);
+    border-radius: .3rem;
+    row-gap: .4rem;
+}
+
+.option{
+    padding: .2rem .3rem;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    column-gap: .5rem;
+    cursor: pointer;
+    transition: all;
+}
+
+.option:hover{
+    background-color: var(--background-color)
+}
+
+.option span{
+    font-size: 18px;
 }
